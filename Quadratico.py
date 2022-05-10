@@ -1,4 +1,6 @@
-#arr = [1,2,3,4,5]
+import time
+start = time.process_time()
+#arr = [20, -30, 15, -10, 30, -20, -30, 30]
 
 def AlturaII(arr):
     soma_maxima = arr[0]
@@ -13,5 +15,7 @@ def AlturaII(arr):
     return soma_maxima
 
 arr = [20, -30, 15, -10, 30, -20, -30, 30]
-
 print(AlturaII(arr))
+
+end = time.process_time()
+print(end - start)
