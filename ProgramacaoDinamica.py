@@ -2,7 +2,7 @@ import time
 start = time.process_time()
 #arr = [20, -30, 15, -10, 30, -20, -30, 30]
 
-def SomaSubArray(arr, n):
+def AlturaIV(arr, n):
     maximo_atual = arr[0]
     maximo_final = 0
 
@@ -17,7 +17,7 @@ def SomaSubArray(arr, n):
     return maximo_atual
 
 arr = [20, -30, 15, -10, 30, -20, -30, 30]
-print(SomaSubArray(arr, len(arr)))
+print(AlturaIV(arr, len(arr)))
 
 end = time.process_time()
 print(end - start)
